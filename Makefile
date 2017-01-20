@@ -74,7 +74,7 @@ ifeq ($(shell uname),Darwin)
 	brew tap homebrew/dupes || true
 	brew tap josegonzalez/homebrew-php || true
 	brew install vim --override-system-vi
-	brew install php55 php55-mcrypt
+	#brew install php55 php55-mcrypt
 	brew install \
 		composer \
 		git \
@@ -86,7 +86,6 @@ ifeq ($(shell uname),Darwin)
 		ruby-build \
 		tmux \
 		wget \
-		youtube-dl \
 		zsh \
 		zsh-syntax-highlighting
 	composer global require "laravel/installer=~1.1"
@@ -96,16 +95,16 @@ ifeq ($(shell uname),Darwin)
 	brew cask install cyberduck
 	brew cask install firefox
 	brew cask install go2shell
-	brew cask install google-chrome
+	#brew cask install google-chrome
 	brew cask install imageoptim
 	brew cask install iterm2
 	brew cask install macdown
-	brew cask install sequel-pro
+	#brew cask install sequel-pro
 	brew cask install slate
-	brew cask install spotifree
-	brew cask install spotify
-	brew cask install vagrant
-	brew cask install virtualbox
+	#brew cask install spotifree
+	#brew cask install spotify
+	#brew cask install vagrant
+	#brew cask install virtualbox
 	@echo 'Mac Defaults'
 	# Expand save panel by default
 	#defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
